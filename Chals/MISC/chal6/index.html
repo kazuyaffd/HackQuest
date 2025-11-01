@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>MISC • Challenge 6 — JSON Key Hunt</title>
+  <style>
+    body{background:#081028;color:#eaf6ff;font-family:Inter,Consolas,monospace;margin:0}
+    header{background:#0b1220;padding:18px 22px;color:#80e0ff;font-weight:700}
+    main{max-width:900px;margin:28px auto;padding:20px}
+    .card{background:#071025;border:1px solid #21314a;border-radius:12px;padding:18px}
+    h1{color:#ffd66b;margin:0}
+    pre{background:#071025;padding:12px;border-radius:8px;overflow:auto}
+    .hint{margin-top:12px;padding:10px;border-radius:8px;border:1px dashed #3b82f6;background:#071025}
+  </style>
+</head>
+<body>
+  <header>MISC Challenge — JSON Key Hunt</header>
+  <main>
+    <div class="card">
+      <h1>JSON Key Hunt</h1>
+      <p>Find the flag inside the JSON below. The flag is the value of one of the top-level keys.</p>
+
+      <pre>{
+  "name": "Alice",
+  "role": "student",
+  "secret_flag": "CTF{json_is_easy}",
+  "meta": {"year":2025}
+}</pre>
+
+      <div class="hint">
+        <strong>Hint:</strong> Look for a top-level key with a name suggesting secrets.
+      </div>
+    </div>
+  </main>
+</body>
+</html>

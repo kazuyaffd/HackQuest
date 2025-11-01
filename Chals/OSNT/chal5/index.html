@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>🕵️ OSINT Challenge — Who is @flyinhigh5_?</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0f172a; --panel:#111827; --accent:#93c5fd; --title:#fbbf24; --hint:#3b82f6; --muted:#94a3b8;
+      --card-border:#374151;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#e6eef8;font-family:Inter, Consolas, "Courier New", monospace;line-height:1.5}
+    header, footer{background:#0b1220;color:var(--accent);padding:18px 22px;font-weight:700}
+    main{max-width:920px;margin:24px auto;padding:18px}
+    .card{background:var(--panel);border:1px solid var(--card-border);border-radius:12px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+    h1{margin:0 0 8px 0;color:var(--title)}
+    p.lead{color:var(--muted);margin-top:6px}
+    .task{margin-top:14px;padding:12px;border-radius:8px;background:#071025;border:1px dashed var(--hint)}
+    .hint{margin-top:12px;padding:12px;border-left:4px solid var(--hint);background:#071728;border-radius:8px}
+    details{margin-top:12px}
+    summary{cursor:pointer;color:var(--accent);font-weight:600}
+    code.inline{background:#071025;padding:2px 6px;border-radius:6px;border:1px solid var(--card-border);font-size:0.95em}
+    .flag-info{margin-top:14px;padding:10px;border-radius:8px;background:#06101a;border:1px solid var(--card-border)}
+    .rules{margin-top:14px}
+    ul{margin:8px 0 0 18px}
+    .small{font-size:0.9em;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>🕵️ OSINT Challenge</header>
+  <main>
+    <div class="card">
+      <h1>Who is behind <code class="inline">@flyinhigh5_</code>?</h1>
+      <p class="lead">A social handle was found during an investigation. Your mission: discover the real person's <strong>full name</strong> and an <strong>email address</strong> publicly associated with that handle.</p>
+
+      <div class="task">
+        <strong>Task:</strong>
+        <p>Find the person who uses the handle <code class="inline">@flyinhigh5_</code>. Submit the answer in the following flag format (replace special characters as shown):</p>
+
+        <div class="flag-info">
+          <strong>Flag format (exact):</strong><br />
+          <code>FLAG{Firstname_Lastname_email_at_example_dot_com}</code>
+        </div>
+
+        <p class="small" style="margin-top:8px">
+          <em>Important:</em> In the email field replace the <code>@</code> character with <code>_at_</code>, and each <code>.</code> with <code>_dot_</code>.  
+          Example: if the discovered email is <code>alice@example.com</code> then the flag would be <code>FLAG{Alice_Smith_alice_at_example_dot_com}</code>.
+        </p>
+      </div>
+
+      <div class="hint"><strong>Hint:</strong> Search different social media platforms.</div>
+      
+  </main>
+  <footer>Good hunting — use your OSINT skills wisely.</footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Challenge 2 - Form Inspector</title>
+  <style>
+    body { background: #0f172a; color: #f8fafc; font-family: "Courier New", monospace; text-align: center; margin: 0; padding: 0;}
+    header, footer { background: #1e293b; padding: 20px; color: #38bdf8; font-weight: bold; text-shadow: 0 0 8px #38bdf8;}
+    .content { padding: 50px; }
+    h2 { color: #facc15; text-shadow: 0 0 8px #facc15; }
+    .hint-box { margin-top: 30px; padding: 15px; border: 2px dashed #38bdf8; display: inline-block; background: #1e293b; color: #38bdf8;}
+  </style>
+</head>
+<body>
+  <header>🕵️ Web Challenge 2: Form Inspector</header>
+  <div class="content">
+    <h2>Can You Find What’s Hidden?</h2>
+    <p>This login page looks ordinary... but maybe it’s hiding something 👀</p>
+    <form action="#" method="POST">
+      Username: <input type="text" name="user"><br><br>
+      Password: <input type="password" name="pass"><br><br>
+      <input type="submit" value="Login">
+      <input type="hidden" name="flag" value="CTF{hidden_in_form}">
+    </form>
+    <div class="hint-box">💡 Hint: Inspect the form carefully… not everything is visible!</div>
+  </div>
+  <footer>CTF Challenge Portal - Web Category</footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🚍 OSINT Challenge — Bus Registration & Insurance</title>
+  <style>
+    body {background:#0f172a;color:#e5e7eb;font-family:Consolas,monospace;margin:0}
+    header {background:#1f2937;color:#93c5fd;padding:18px;font-weight:700}
+    main {max-width:900px;margin:0 auto;padding:30px}
+    .card {background:#111827;border:1px solid #374151;border-radius:12px;padding:20px;margin:18px 0}
+    h1 {color:#fbbf24}
+    img {max-width:100%;border-radius:12px;margin-top:15px}
+    .hint {border:1px dashed #3b82f6;background:#0b1220;padding:10px;margin-top:15px;border-radius:10px}
+    code {background:#0b1220;border:1px solid #374151;border-radius:6px;padding:2px 6px}
+  </style>
+</head>
+<body>
+  <header>🚍 OSINT Challenge</header>
+  <main>
+    <div class="card">
+      <h1>The Bus Ride</h1>
+      <p>
+        While on holiday I really enjoyed riding that <strong>furthest left bus</strong> in this image.  
+        Some would call me obsessed, but I’d love to know the day the vehicle was <strong>registered</strong> (<code>YYYY-MM-DD</code>),  
+        and which company it is <strong>insured with</strong> (English or native language accepted).
+      </p>
+      <p>
+        Write the flag as: <code>FLAG&#123;YYYY-MM-DD_company_name&#125;</code><br>
+        Example: <code>FLAG&#123;2024-01-31_insurance_guys&#125;</code>
+      </p>
+      <img src="buses.png" alt="Photo of bus on the street">
+      <div class="hint"><strong>Hint:</strong> The bus number plate and transport databases might hold the answer. Look closely at the markings.</div>
+    </div>
+  </main>
+</body>
+</html>

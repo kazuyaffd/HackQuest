@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Pwn • Challenge 1 — Buffer Flip</title>
+<style>
+  body{background:#081028;color:#dfefff;font-family:Inter,Consolas,monospace;margin:0}
+  header{background:#0b1220;padding:18px 22px;color:#7dd3fc;font-weight:700}
+  main{max-width:900px;margin:28px auto;padding:20px}
+  .card{background:#071025;border:1px solid #21314a;border-radius:12px;padding:18px}
+  h1{color:#ffd66b;margin:0}
+  .btn{display:inline-block;margin:8px 6px;padding:8px 12px;border-radius:8px;background:#071025;border:1px solid #21314a;color:#7dd3fc;text-decoration:none}
+  .hint{margin-top:12px;padding:10px;border-radius:8px;border:1px dashed #3b82f6;background:#071025}
+  code{background:#0b1220;padding:2px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<header>Pwn Lab — Challenge 1</header>
+<main>
+  <div class="card">
+    <h1>Buffer Flip</h1>
+    <p>
+      A tiny program asks for your name. The developer made a mistake and allowed too many bytes to be read into a small buffer.
+      Find the bug and make the program print the flag (flag.txt is present in the challenge folder).
+    </p>
+
+    <p><strong>What to submit:</strong> The flag printed after you trigger the bug.</p>
+
+    <div class="hint">
+      <strong>Hints:</strong>
+      <ul>
+        <li>Look at the sizes of variables in the source code.</li>
+        <li>Try sending more characters than the buffer holds.</li>
+        <li>Use only safe local tools (run in a lab VM).</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:12px;font-size:0.9em;color:#9fb6d8">
+      Files expected in this folder: <code>chal1</code> (binary), <code>challenge.c</code>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>MISC • Challenge 4 — Regex Extraction</title>
+  <style>
+    body{background:#081028;color:#eaf6ff;font-family:Inter,Consolas,monospace;margin:0}
+    header{background:#0b1220;padding:18px 22px;color:#80e0ff;font-weight:700}
+    main{max-width:900px;margin:28px auto;padding:20px}
+    .card{background:#071025;border:1px solid #21314a;border-radius:12px;padding:18px}
+    h1{color:#ffd66b;margin:0}
+    pre{background:#071025;padding:12px;border-radius:8px;overflow:auto}
+    .hint{margin-top:12px;padding:10px;border-radius:8px;border:1px dashed #3b82f6;background:#071025}
+  </style>
+</head>
+<body>
+  <header>MISC Challenge — Regex Extraction</header>
+  <main>
+    <div class="card">
+      <h1>Regex Extraction</h1>
+      <p>Extract the flag from the noisy text below using a regular expression.</p>
+
+      <pre id="noisy">
+Dear user,
+We scanned logs: session_xf23 data 2025; random token: CTF{regex_fun_123}
+Ignore other noise: 9384 221.
+Thank you.
+      </pre>
+
+      <p><strong>Submit:</strong> the flag string extracted from the text.</p>
+
+      <div class="hint">
+        <strong>Hint:</strong> Use the regex pattern <code>CTF\{[^\}]+\}</code> to match the flag.
+      </div>
+    </div>
+  </main>
+</body>
+</html>
